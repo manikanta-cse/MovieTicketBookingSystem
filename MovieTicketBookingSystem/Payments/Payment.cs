@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MovieTicketBookingSystem
+namespace MovieTicketBookingSystem.Payments
 {
     class Payment
     {
@@ -14,5 +14,6 @@ namespace MovieTicketBookingSystem
 
         public PaymentStatus Status { get; set; }
 
+        public decimal Value { get; set; }
     }
 }
