@@ -6,18 +6,18 @@ namespace MovieTicketBookingSystem.Theatre
 {
     internal class Theatre
     {
-        public int Id { get; private set; }
+        public int Id { get; }
 
         public string Name { get; set; }
 
         public string Address { get; set; }
 
-        public List<TimeSpan> ShowTimings { get; private set; }
+        public List<TimeSpan> ShowTimings { get; }
 
         public Movie.Movie PlayingNow { get; set; }
-        public SeatLayout SeatingCapacity { get; set; }
+        public SeatLayout SeatingCapacity { get; }
 
-        public decimal SeatPrice { get; private set; }
+        public decimal SeatPrice { get; }
 
         private Dictionary<TimeSpan, List<int>> _availableSeats;
 
@@ -54,11 +54,6 @@ namespace MovieTicketBookingSystem.Theatre
 
             availableSeats.Value.AddRange(cancelledSeats);
 
-        }
-
-        public decimal GetSeatPrice()
-        {
-            return SeatPrice;
         }
 
         public void GenerateSeatsForAllShows()

@@ -5,7 +5,7 @@ namespace MovieTicketBookingSystem.Booking
 {
     class Booking
     {
-        public Guid Id { get; set; }
+        public Guid Id { get; }
 
         public int By { get; set; }
 

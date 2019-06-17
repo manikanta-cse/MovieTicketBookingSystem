@@ -4,7 +4,7 @@ namespace MovieTicketBookingSystem.Payment
 {
     class Payment
     {
-        public int Id { get; set; }
+        public int Id { get;}
 
         public PaymentType Type { get; set; }
 
