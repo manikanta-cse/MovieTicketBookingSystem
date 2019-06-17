@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace MovieTicketBookingSystem
+﻿namespace MovieTicketBookingSystem.Movie
 {
     class Review
     {

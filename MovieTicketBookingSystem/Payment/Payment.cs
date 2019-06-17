@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace MovieTicketBookingSystem.Payments
+namespace MovieTicketBookingSystem.Payment
 {
     class Payment
     {
@@ -15,5 +13,10 @@ namespace MovieTicketBookingSystem.Payments
         public PaymentStatus Status { get; set; }
 
         public decimal Value { get; set; }
+
+        public Payment()
+        {
+            Id = new Random().Next();
+        }
     }
 }

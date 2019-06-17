@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace MovieTicketBookingSystem.Payments
+namespace MovieTicketBookingSystem.Payment
 {
     class PaymentProcesser
     {
@@ -10,10 +8,10 @@ namespace MovieTicketBookingSystem.Payments
         {
             return new Payment
             {
-                Id = new Random().Next(),
+               
                 ReferenceId = Guid.NewGuid().ToString(), // from payment gateway
-                Status = PaymentStatus.PAID, // from payment gateway
-                Type = PaymentType.CREDIT,
+                Status = PaymentStatus.Paid, // from payment gateway
+                Type = PaymentType.Credit,
                 Value =amount
             
 

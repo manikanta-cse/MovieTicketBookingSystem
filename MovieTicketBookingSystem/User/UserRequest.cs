@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace MovieTicketBookingSystem
+namespace MovieTicketBookingSystem.User
 {
     class UserRequest
     {

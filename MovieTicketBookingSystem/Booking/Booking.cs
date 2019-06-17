@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
-namespace MovieTicketBookingSystem
+namespace MovieTicketBookingSystem.Booking
 {
     class Booking
     {
@@ -24,6 +23,11 @@ namespace MovieTicketBookingSystem
         public DateTime ShowTime { get; set; }
 
         public int PaymentId { get; set; }
+
+        public Booking()
+        {
+            Id = Guid.NewGuid();
+        }
 
 
 

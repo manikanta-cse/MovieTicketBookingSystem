@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace MovieTicketBookingSystem
+﻿namespace MovieTicketBookingSystem.Movie
 {
     enum MovieStatus
     {
-        PLAYING,
-        UPCOMING,
-        NOTPLAYING
+        Playing,
+        Upcoming,
+        Notplaying
     }
 }

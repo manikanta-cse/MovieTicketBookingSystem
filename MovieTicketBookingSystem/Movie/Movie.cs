@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
-namespace MovieTicketBookingSystem
+namespace MovieTicketBookingSystem.Movie
 {
     class Movie
     {
-        public int Id { get; set; }
+        public int Id { get; private set; }
 
         public string Name { get; set; }
 
@@ -21,6 +20,11 @@ namespace MovieTicketBookingSystem
         public int Rating { get; set; }
 
         public IEnumerable<Review> Reviews { get; set; }
+
+        public Movie()
+        {
+            Id = new Random().Next();
+        }
 
     }
 }
